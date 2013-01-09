@@ -1,0 +1,276 @@
+# VIM Snippets file v1.0 written by hap
+# http://www.ThinkHap.com
+# 2011.12.09
+# Some useful Unicode entities
+# multilines 
+snippet char
+	@charset: "${1:gbk}";
+snippet style
+	<style type="text/css">
+		${1}
+	</style>${2}
+snippet link
+	<link rel="stylesheet" type="text/css" href="${1:style}.css" />${2}
+snippet cdata
+	<?[CDATA[
+		${1}
+	]]>${2}
+snippet wh
+	width: ${1}px;
+	height: ${2}px;${3}
+snippet fl
+	float: left;${1}
+snippet fr
+	float: right;${1}
+snippet fn
+	float: none;${1}
+snippet cb
+	clear: both;${1}
+snippet db
+	display: block;${1}
+snippet dt
+	display: table;${1}
+snippet di
+	display: inline;${1}
+snippet dn
+	display: none;${1}
+snippet of
+	overflow: ${1:hidden};${2}
+snippet oh
+	overflow: hidden;${1}
+snippet oa
+	overflow: auto;${1}
+snippet os
+	overflow: scroll;${1}
+snippet ov
+	overflow: visible;${1}
+snippet por
+	position: relative;${1}
+snippet poa
+	position: absolute;${1}
+snippet pos
+	position: static;${1}
+snippet pof
+	position: fixed;${1}
+snippet zi 
+	z-index: ${1};
+snippet vi
+	visibility: ${1:visible};${2}
+snippet vih
+	visibility: hidden;${1}
+snippet viv
+	visibility: visible;${1}
+snippet m
+	margin: ${1:0};${2}
+snippet mt
+	margin-top: ${1}px;${2}
+snippet ml
+	margin-left: ${1}px;${2}
+snippet mb
+	margin-bottom: ${1}px;${2}
+snippet mr
+	margin-right: ${1}px;${2}
+snippet pad
+	padding: ${1:0};${2}
+snippet pt
+	padding-top: ${1}px;${2}
+snippet pl
+	padding-left: ${1}px;${2}
+snippet pb
+	padding-bottom: ${1}px;${2}
+snippet pr
+	padding-right: ${1}px;${2}
+snippet pm
+	padding: ${1:0}; margin: ${2:0};${3}
+snippet w
+	width: ${1}px;${2}
+snippet h
+	height: ${1}px;${2}
+snippet lh
+	line-height: ${1}px;${2}
+snippet mh
+	min-height: ${1}px;${2}
+snippet boc
+	border-collapse: collapse;${1}
+snippet bo
+	border: ${1:1}px solid #${2};${3}
+snippet bon
+	border: 0 none;${1}
+snippet bot
+	border-top: ${1:1}px solid #${2};${3}
+snippet bor
+	border-right: ${1:1}px solid #${2};${3}
+snippet bob
+	border-bottom: ${1:1}px solid #${2};${3}
+snippet bol
+	border-left: ${1:1}px solid #${2};${3}
+snippet bgc
+	background-color: #${1};${2}
+snippet bg
+	background: #${1:fff} url("images/${2}") no-repeat left top;${3}
+snippet bgx
+	background: url("images/${1}") repeat-x left top;${2}
+snippet bgy
+	background: url("images/${1}") repeat-y left top;${2}
+snippet bgp
+	background-position: ${1:0 0};${2}
+snippet bgi
+	background-image: url("images/${1}");${2}
+snippet bgn
+	background: none;${1}
+snippet f
+	font: normal 12px/1.5em "Arial";${1}
+snippet fs
+	font-size: ${1}px;${2}
+snippet fw
+	font-weight: ${1:bold};${2}
+snippet fwn
+	font-weight: normal;${1}
+snippet co
+	color: #${1};${2}
+snippet tac
+	text-align: center;${1}
+snippet tal
+	text-align: left;${1}
+snippet tar
+	text-align: right;${1}
+snippet ti
+	text-indent: ${1:-9999}px;${2}
+snippet tdn
+	text-decoration: none;${1}
+snippet tdu
+	text-decoration: underline;${1}
+snippet va
+	vertical-align: ${1:middle};${2}
+snippet ls
+	list-style: ${1:none};${2}
+snippet cp
+	cursor: pointer;${1}
+snippet ws
+	white-space: nowrap;${1}
+snippet wb
+	word-break: break-all;${1}
+snippet ff
+	font-family: arial,verdana,sans-serif;${1}
+snippet opa
+	filter: Alpha(opacity=${1:50});-moz-opacity: ${2:0.5};opacity: ${3:0.5};${4}
+snippet filter
+	background-color: rgba(51,51,51,0.3);_filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C333333', endColorstr='#4C333333')}
+snippet fixpng
+	_background: none; _filter:	progid: DXImageTransform.Microsoft.AlphaImageLoader(src='${1}');${2}
+snippet obj
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="950" height="150">
+		<param name="movie" value="${1}" />
+		<param name="quality" value="high" />
+		<param name="wmode" value="opaque" />
+		<embed src="${2}" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="opaque" width="${3:950}" height="${4:150}"></embed>
+	</object>${5}
+snippet imap
+	<img src="images/${1}" alt="${2}" usemap="#${3:map1}" />
+		<map name="${4:$3}" id="${5:$3}">
+			<area shape="${6:rect}" coords="${7:0,0,100,100}" href="${8:#}"	target="_blank" title="${9}" />
+		</map>${10}
+snippet map
+	<map name="${1:map1}" id="${2:$1}">
+		<area shape="${3:rect}" coords="${4:0,0,100,100}" href="${5:#}" target="_blank" title="${6}" />
+	</map>${7}
+snippet usemap
+	usemap="#${1:map1}"${2}
+snippet area
+	<area shape="poly" coords="0,0,200,0,100,100,30,100" href="#" target="_blank" title="" />
+	<area shape="circle" coords="圆心0,0,+半径10" href="#" target="_blank" title="" />
+snippet cf
+	/* clearfix */
+	.clear-fix:after{
+		display: block;
+		visibility: hidden;
+		font-size: 0;
+		line-height: 0;
+		clear: both;
+		content: "";
+	}  
+	.clear-fix {
+		zoom: 1;
+	} /*IE*/
+snippet bora
+	border-radius: ${1:5}px;
+snippet bs
+	box-shadow: ${1:5}px ${2:5}px ${3:5}px ${4:#000};
+	-moz-box-shadow: ${5:$1}px ${6:$2}px ${7:$3}px ${8:$4};
+	-webkit-box-shadow: ${9:$1}px ${10:$2}px ${11:$3}px ${12:$4};
+	-o-box-shadow: ${13:$1}px ${14:$2}px ${15:$3}px ${16:$4};
+snippet ts
+	text-shadow: ${1:5}px ${2:5}px ${3:5}px ${4:#000};
+	-moz-text-shadow: ${5:$1}px ${6:$2}px ${7:$3}px ${8:$4};
+	-webkit-text-shadow: ${9:$1}px ${10:$2}px ${11:$3}px ${12:$4};
+	-o-text-shadow: ${13:$1}px ${14:$2}px ${15:$3}px ${16:$4};
+snippet lgrad
+	background: -moz-linear-gradient(${1:top}, ${2:red}, ${3:blue});
+	background: -webkit-linear-gradient(${4:$1}, ${5:$2}, ${6:$3});
+	background: -o-linear-gradient(${7:$1}, ${8:$2}, ${9:$3});
+snippet rgrad
+	background: -moz-radial-gradient(${1:10% 30%}, ${2:white}, ${3:black});
+	background: -webkit-radial-gradient(${4:$1}, ${5:$2}, ${6:$3});
+	background: -o-radial-gradient(${7:$1}, ${8:$2}, ${9:$3});
+snippet transform
+	transform: rotate(${1:45}deg)${2: scale(1.5)};
+	-moz-transform: rotate(${1:45}deg)${2: scale(1.5)};
+	-webkit-transform: rotate(${3:$1}deg)${4:$2};
+	-o-transform: rotate(${5:$1}deg)${6:$2};
+	-ms-transform: rotate(${5:$1}deg)${6:$2};
+snippet transition
+	transition: ${1:all} ${2:2}s ${3:ease-in-out};
+	-moz-transition: ${4:$1} ${5:$2}s ${6:$3};
+	-webkit-transition: ${7:$1} ${8:$2}s ${9:$3};
+	-o-transition: ${10:$1} ${11:$2}s ${12:$3};
+	-ms-transition: ${10:$1} ${11:$2}s ${12:$3};
+snippet cms
+	<cms:custom title="${1}" group="${2}" fields="${3:href:链接:string}" defaultRow="${4}" row="${5}">
+	#foreach($item in $customList)
+	${6}
+	#end
+	</cms: custom>
+snippet fixed
+	/*让position: fixed在IE6下可用! */
+	.fixed-top /* 头部固定 */{position: fixed;bottom:auto;top:0px;}
+	.fixed-bottom /* 底部固定 */{position: fixed;bottom:0px;top:auto;}
+	.fixed-left /* 左侧固定 */{position: fixed;right:auto;left:0px;}
+	.fixed-right /* 右侧固定 */{position: fixed;right:0px;left:auto;}
+	/* 上面的是除了IE6的主流浏览器通用的方法 */
+	* html,* html body /* 修正IE6振动bug */{background-image: url(about:blank);background-attachment:fixed;}
+	* html .fixed-top /* IE6 头部固定 */{position: absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop));}
+	* html .fixed-right /* IE6 右侧固定 */ {position: absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));}
+	* html .fixed-bottom /* IE6 底部固定  */{position: absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+	* html .fixed-left /* IE6 左侧固定 */{position: absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft));}
+snippet ie
+	/*IE HACK*/
+	p{
+		color: #000;	 /* 所有浏览器 */
+		color: #f00\9;	 /* 所有IE */
+		*color: #00f;	/* IE6,7 */
+		+color: #0f0;	/* IE7 */
+		_color: #e6e6e6;	 /* IE6 */
+	}
+
+	<!--if IE 6 7 8 9-->
+	<!--[if IE 6]>
+	    ^!
+	<![endif]-->
+	<!--[if lt IE 7]>
+	    ^!
+	<![endif]-->        <!-- 低于IE7的版本 -->
+	<!--[if lte IE 8]>
+	    ^!
+	<![endif]-->        <!-- 低于等于IE8的版本 -->
+	<!--[if !IE]><-->
+	    ^!
+	<!--<![endif]-->        <!-- 非IE -->
+
+	IE min-height
+	height: auto!important;
+	height: 500px;
+	min-height: 500px;
+	
+	min-height: 100px;
+	height: auto!important;
+	height: 100px;

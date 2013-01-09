@@ -1,0 +1,467 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal cindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=j1,J1
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=//%s
+setlocal complete=.,w,b,k,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'javascript'
+setlocal filetype=javascript
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=4
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=BmMcroql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,128-167,224-235,$
+setlocal keywordprg=
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=javascriptcomplete#CompleteJS
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'javascript'
+setlocal syntax=javascript
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal undofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+13
+normal zo
+23
+normal zc
+33
+normal zc
+55
+normal zo
+57
+normal zc
+64
+normal zc
+67
+normal zc
+70
+normal zc
+73
+normal zc
+76
+normal zc
+79
+normal zc
+86
+normal zc
+89
+normal zc
+55
+normal zo
+111
+normal zc
+131
+normal zc
+142
+normal zc
+151
+normal zc
+157
+normal zc
+163
+normal zo
+163
+normal zc
+193
+normal zo
+207
+normal zo
+212
+normal zo
+218
+normal zc
+226
+normal zc
+234
+normal zc
+246
+normal zc
+257
+normal zc
+212
+normal zc
+207
+normal zc
+290
+normal zo
+290
+normal zc
+381
+normal zo
+386
+normal zo
+390
+normal zo
+391
+normal zo
+391
+normal zo
+390
+normal zo
+458
+normal zo
+458
+normal zo
+518
+normal zc
+525
+normal zc
+532
+normal zc
+543
+normal zc
+554
+normal zc
+386
+normal zo
+381
+normal zo
+583
+normal zo
+584
+normal zc
+583
+normal zo
+597
+normal zo
+598
+normal zc
+597
+normal zo
+604
+normal zo
+605
+normal zc
+604
+normal zo
+630
+normal zo
+638
+normal zo
+741
+normal zo
+742
+normal zo
+741
+normal zo
+771
+normal zo
+638
+normal zo
+630
+normal zo
+798
+normal zo
+803
+normal zo
+803
+normal zc
+937
+normal zo
+937
+normal zc
+1069
+normal zo
+1069
+normal zc
+1098
+normal zo
+1098
+normal zc
+1173
+normal zo
+1173
+normal zc
+1182
+normal zo
+1182
+normal zc
+1203
+normal zo
+1203
+normal zc
+1215
+normal zc
+1220
+normal zc
+1225
+normal zc
+1230
+normal zc
+1235
+normal zc
+1240
+normal zc
+1245
+normal zc
+1261
+normal zc
+1411
+normal zc
+1445
+normal zc
+1478
+normal zc
+1534
+normal zc
+1547
+normal zc
+1617
+normal zc
+1653
+normal zc
+1683
+normal zc
+1708
+normal zc
+2240
+normal zc
+193
+normal zo
+798
+normal zo
+801
+normal zo
+803
+normal zo
+806
+normal zo
+815
+normal zo
+832
+normal zo
+834
+normal zo
+841
+normal zo
+848
+normal zo
+857
+normal zo
+862
+normal zo
+899
+normal zo
+862
+normal zo
+920
+normal zo
+857
+normal zo
+803
+normal zo
+937
+normal zo
+940
+normal zo
+948
+normal zo
+962
+normal zo
+993
+normal zo
+995
+normal zo
+993
+normal zo
+1020
+normal zo
+1027
+normal zo
+1035
+normal zo
+1045
+normal zo
+1050
+normal zo
+1045
+normal zo
+937
+normal zo
+1064
+normal zo
+1069
+normal zo
+1074
+normal zo
+1076
+normal zo
+1082
+normal zo
+1090
+normal zo
+1074
+normal zo
+1069
+normal zo
+1098
+normal zo
+1104
+normal zo
+1112
+normal zo
+1123
+normal zo
+1132
+normal zo
+1104
+normal zo
+1146
+normal zo
+1150
+normal zo
+1098
+normal zo
+1157
+normal zo
+1160
+normal zo
+1168
+normal zo
+1172
+normal zo
+1173
+normal zo
+1175
+normal zo
+1173
+normal zo
+1182
+normal zo
+1185
+normal zo
+1182
+normal zo
+1203
+normal zo
+1205
+normal zo
+1203
+normal zo
+1215
+normal zo
+1220
+normal zo
+1225
+normal zo
+1230
+normal zo
+1235
+normal zo
+1240
+normal zo
+1245
+normal zo
+1172
+normal zo
+1261
+normal zc
+1411
+normal zc
+1445
+normal zc
+1478
+normal zc
+1534
+normal zc
+1547
+normal zc
+1617
+normal zc
+1653
+normal zc
+1683
+normal zc
+1708
+normal zc
+2240
+normal zc
+let s:l = 1229 - ((20 * winheight(0) + 21) / 42)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1229
+normal! 05l
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

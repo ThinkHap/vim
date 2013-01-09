@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='C:\Program Files\Vim'
+let g:netrw_dirhist_2='D:/git/rebate/src/css'
+let g:netrw_dirhist_3='d:/git/rebate/template/help'
+let g:netrw_dirhist_4='D:\www\ehome\template\blocks2012'

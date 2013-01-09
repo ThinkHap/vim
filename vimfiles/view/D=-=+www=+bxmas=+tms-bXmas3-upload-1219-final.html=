@@ -1,0 +1,315 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+setlocal commentstring=<!--%s-->
+setlocal complete=.,w,b,k,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal cursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'html'
+setlocal filetype=html
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=indent
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcqBmM
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=HtmlIndentGet(v:lnum)
+setlocal indentkeys=o,O,*<Return>,<>>,{,}
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,128-167,224-235,$
+setlocal keywordprg=
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=htmlcomplete#CompleteTags
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'html'
+setlocal syntax=html
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal undofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+2
+normal zo
+2
+normal zo
+2
+normal zo
+130
+normal zo
+130
+normal zo
+130
+normal zo
+130
+normal zo
+470
+normal zo
+471
+normal zo
+473
+normal zo
+480
+normal zo
+481
+normal zo
+480
+normal zo
+473
+normal zc
+471
+normal zo
+543
+normal zo
+544
+normal zo
+547
+normal zo
+544
+normal zo
+555
+normal zo
+556
+normal zo
+555
+normal zo
+1081
+normal zo
+1082
+normal zo
+1088
+normal zo
+1090
+normal zo
+1091
+normal zo
+1091
+normal zo
+1090
+normal zo
+1088
+normal zo
+1082
+normal zo
+1081
+normal zo
+1111
+normal zo
+1112
+normal zo
+1119
+normal zo
+1121
+normal zo
+1124
+normal zo
+1130
+normal zo
+1131
+normal zo
+1132
+normal zo
+1136
+normal zo
+1142
+normal zo
+1146
+normal zo
+1150
+normal zo
+1131
+normal zo
+1130
+normal zo
+1121
+normal zo
+1119
+normal zo
+1160
+normal zo
+1112
+normal zo
+1164
+normal zo
+1111
+normal zo
+1172
+normal zo
+1173
+normal zo
+1175
+normal zo
+1175
+normal zo
+1182
+normal zo
+1183
+normal zo
+1184
+normal zo
+1187
+normal zo
+1193
+normal zo
+1194
+normal zo
+1195
+normal zo
+1199
+normal zo
+1211
+normal zo
+1215
+normal zo
+1194
+normal zo
+1193
+normal zo
+1184
+normal zo
+1183
+normal zo
+1230
+normal zo
+1233
+normal zo
+1182
+normal zo
+1173
+normal zo
+1172
+normal zo
+543
+normal zo
+1249
+normal zo
+1250
+normal zo
+1251
+normal zo
+1252
+normal zo
+1251
+normal zo
+1250
+normal zo
+1267
+normal zo
+1272
+normal zo
+1273
+normal zo
+1272
+normal zo
+1281
+normal zo
+1267
+normal zo
+1290
+normal zo
+1292
+normal zo
+1296
+normal zo
+1297
+normal zo
+1296
+normal zo
+1303
+normal zo
+1307
+normal zo
+1307
+normal zo
+1303
+normal zo
+1290
+normal zo
+1249
+normal zo
+470
+normal zo
+1317
+normal zo
+1317
+normal zo
+let s:l = 1224 - ((37 * winheight(0) + 21) / 42)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1224
+normal! 034l
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

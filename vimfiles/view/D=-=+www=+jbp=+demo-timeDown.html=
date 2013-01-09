@@ -1,0 +1,705 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+setlocal commentstring=<!--%s-->
+setlocal complete=.,w,b,k,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'html'
+setlocal filetype=html
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=indent
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcqBmM
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=HtmlIndentGet(v:lnum)
+setlocal indentkeys=o,O,*<Return>,<>>,{,}
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,128-167,224-235,$
+setlocal keywordprg=
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=htmlcomplete#CompleteTags
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'html'
+setlocal syntax=html
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal undofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+4
+normal zo
+7
+normal zo
+7
+normal zc
+4
+normal zo
+186
+normal zo
+187
+normal zo
+190
+normal zo
+190
+normal zc
+207
+normal zo
+209
+normal zo
+210
+normal zo
+211
+normal zo
+210
+normal zc
+216
+normal zo
+217
+normal zo
+219
+normal zo
+217
+normal zo
+216
+normal zc
+225
+normal zo
+226
+normal zo
+227
+normal zo
+229
+normal zo
+230
+normal zo
+231
+normal zo
+234
+normal zo
+235
+normal zo
+238
+normal zo
+241
+normal zo
+244
+normal zo
+247
+normal zo
+251
+normal zo
+234
+normal zo
+230
+normal zo
+257
+normal zo
+258
+normal zo
+259
+normal zo
+262
+normal zo
+268
+normal zo
+269
+normal zo
+274
+normal zo
+275
+normal zo
+278
+normal zo
+274
+normal zo
+268
+normal zo
+258
+normal zo
+257
+normal zo
+229
+normal zo
+227
+normal zo
+226
+normal zo
+290
+normal zo
+291
+normal zo
+293
+normal zo
+295
+normal zo
+296
+normal zo
+297
+normal zo
+300
+normal zo
+303
+normal zo
+306
+normal zo
+296
+normal zo
+295
+normal zo
+293
+normal zo
+291
+normal zo
+290
+normal zc
+225
+normal zo
+209
+normal zo
+318
+normal zo
+320
+normal zo
+321
+normal zo
+322
+normal zo
+323
+normal zo
+325
+normal zo
+326
+normal zo
+327
+normal zo
+330
+normal zo
+333
+normal zo
+336
+normal zo
+339
+normal zo
+342
+normal zo
+326
+normal zo
+325
+normal zo
+323
+normal zo
+322
+normal zo
+321
+normal zo
+320
+normal zo
+318
+normal zc
+354
+normal zo
+355
+normal zo
+356
+normal zo
+358
+normal zo
+359
+normal zo
+358
+normal zo
+363
+normal zc
+356
+normal zo
+367
+normal zo
+369
+normal zo
+370
+normal zo
+372
+normal zo
+373
+normal zo
+372
+normal zo
+370
+normal zo
+369
+normal zo
+367
+normal zc
+355
+normal zc
+354
+normal zc
+383
+normal zc
+207
+normal zo
+391
+normal zo
+392
+normal zo
+393
+normal zo
+395
+normal zo
+396
+normal zo
+395
+normal zo
+393
+normal zo
+392
+normal zc
+404
+normal zo
+406
+normal zo
+407
+normal zo
+406
+normal zo
+413
+normal zo
+414
+normal zo
+415
+normal zo
+418
+normal zo
+421
+normal zo
+424
+normal zo
+427
+normal zo
+431
+normal zo
+414
+normal zo
+413
+normal zc
+404
+normal zc
+391
+normal zo
+438
+normal zo
+444
+normal zo
+438
+normal zc
+450
+normal zo
+451
+normal zo
+458
+normal zc
+465
+normal zo
+467
+normal zo
+465
+normal zc
+471
+normal zo
+473
+normal zo
+471
+normal zo
+450
+normal zc
+477
+normal zo
+479
+normal zc
+491
+normal zo
+493
+normal zo
+501
+normal zo
+503
+normal zo
+505
+normal zo
+491
+normal zc
+510
+normal zo
+511
+normal zo
+514
+normal zo
+515
+normal zo
+517
+normal zo
+518
+normal zo
+520
+normal zo
+522
+normal zo
+518
+normal zo
+517
+normal zo
+527
+normal zo
+515
+normal zo
+514
+normal zc
+536
+normal zo
+539
+normal zo
+545
+normal zo
+546
+normal zo
+547
+normal zo
+550
+normal zo
+547
+normal zo
+546
+normal zo
+545
+normal zo
+539
+normal zc
+560
+normal zo
+561
+normal zo
+565
+normal zo
+561
+normal zo
+560
+normal zo
+511
+normal zo
+510
+normal zo
+187
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+567
+normal zo
+573
+normal zo
+574
+normal zo
+577
+normal zo
+578
+normal zo
+588
+normal zo
+598
+normal zo
+612
+normal zo
+630
+normal zo
+577
+normal zo
+649
+normal zo
+573
+normal zc
+671
+normal zo
+672
+normal zo
+675
+normal zo
+680
+normal zo
+681
+normal zo
+682
+normal zo
+684
+normal zo
+691
+normal zo
+693
+normal zo
+695
+normal zo
+697
+normal zo
+698
+normal zo
+703
+normal zo
+705
+normal zo
+698
+normal zo
+708
+normal zo
+697
+normal zo
+712
+normal zo
+695
+normal zo
+691
+normal zo
+717
+normal zo
+719
+normal zo
+722
+normal zo
+724
+normal zo
+727
+normal zo
+729
+normal zo
+730
+normal zo
+735
+normal zo
+736
+normal zo
+738
+normal zo
+735
+normal zo
+730
+normal zo
+742
+normal zo
+729
+normal zo
+745
+normal zo
+727
+normal zo
+719
+normal zo
+717
+normal zo
+753
+normal zo
+684
+normal zo
+681
+normal zo
+680
+normal zo
+762
+normal zo
+675
+normal zo
+672
+normal zo
+671
+normal zo
+567
+normal zo
+567
+normal zo
+774
+normal zo
+775
+normal zo
+778
+normal zo
+782
+normal zo
+784
+normal zo
+786
+normal zo
+789
+normal zo
+792
+normal zo
+778
+normal zo
+797
+normal zo
+774
+normal zo
+803
+normal zo
+804
+normal zo
+805
+normal zo
+806
+normal zo
+807
+normal zo
+811
+normal zo
+813
+normal zo
+814
+normal zo
+813
+normal zo
+806
+normal zo
+805
+normal zo
+822
+normal zo
+827
+normal zo
+834
+normal zo
+822
+normal zo
+843
+normal zo
+845
+normal zo
+849
+normal zo
+850
+normal zo
+849
+normal zo
+856
+normal zo
+860
+normal zo
+862
+normal zo
+860
+normal zo
+856
+normal zo
+843
+normal zo
+804
+normal zo
+803
+normal zo
+871
+normal zo
+872
+normal zo
+874
+normal zo
+875
+normal zo
+874
+normal zo
+872
+normal zo
+871
+normal zo
+567
+normal zo
+186
+normal zo
+let s:l = 573 - ((34 * winheight(0) + 20) / 40)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+573
+normal! 043l
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

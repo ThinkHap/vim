@@ -1,0 +1,1035 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+setlocal commentstring=<!--%s-->
+setlocal complete=.,w,b,k,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'xhtml'
+setlocal filetype=xhtml
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=indent
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=BmMcroql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=HtmlIndentGet(v:lnum)
+setlocal indentkeys=o,O,*<Return>,<>>,{,}
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,128-167,224-235,$
+setlocal keywordprg=
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=htmlcomplete#CompleteTags
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'xhtml'
+setlocal syntax=xhtml
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal undofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+4
+normal zo
+7
+normal zo
+4
+normal zo
+135
+normal zo
+136
+normal zo
+137
+normal zo
+139
+normal zo
+143
+normal zo
+137
+normal zo
+149
+normal zo
+150
+normal zo
+152
+normal zo
+153
+normal zo
+154
+normal zo
+153
+normal zo
+165
+normal zo
+166
+normal zo
+167
+normal zo
+177
+normal zo
+182
+normal zo
+187
+normal zo
+192
+normal zo
+166
+normal zo
+165
+normal zo
+152
+normal zo
+201
+normal zo
+214
+normal zo
+214
+normal zo
+201
+normal zc
+150
+normal zo
+149
+normal zo
+573
+normal zo
+575
+normal zo
+573
+normal zc
+580
+normal zo
+582
+normal zo
+586
+normal zo
+591
+normal zo
+595
+normal zo
+580
+normal zc
+136
+normal zo
+135
+normal zo
+601
+normal zo
+602
+normal zo
+604
+normal zo
+604
+normal zc
+620
+normal zo
+622
+normal zo
+625
+normal zo
+620
+normal zc
+633
+normal zo
+635
+normal zo
+638
+normal zo
+633
+normal zc
+644
+normal zo
+646
+normal zo
+644
+normal zc
+653
+normal zo
+656
+normal zo
+658
+normal zo
+653
+normal zc
+602
+normal zo
+663
+normal zo
+667
+normal zo
+668
+normal zo
+667
+normal zo
+663
+normal zc
+674
+normal zo
+675
+normal zo
+678
+normal zo
+675
+normal zc
+686
+normal zo
+691
+normal zo
+686
+normal zc
+702
+normal zo
+705
+normal zo
+707
+normal zo
+710
+normal zo
+707
+normal zo
+705
+normal zo
+702
+normal zc
+726
+normal zo
+727
+normal zo
+730
+normal zo
+734
+normal zo
+740
+normal zo
+742
+normal zo
+747
+normal zo
+748
+normal zo
+747
+normal zo
+752
+normal zo
+740
+normal zc
+757
+normal zo
+760
+normal zo
+762
+normal zo
+764
+normal zo
+757
+normal zo
+726
+normal zc
+772
+normal zo
+776
+normal zo
+782
+normal zo
+783
+normal zo
+800
+normal zo
+806
+normal zo
+813
+normal zo
+814
+normal zo
+815
+normal zo
+814
+normal zo
+820
+normal zo
+821
+normal zo
+820
+normal zo
+813
+normal zc
+782
+normal zc
+885
+normal zo
+904
+normal zo
+906
+normal zo
+904
+normal zo
+922
+normal zo
+923
+normal zo
+923
+normal zo
+923
+normal zo
+923
+normal zo
+923
+normal zo
+922
+normal zo
+946
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+956
+normal zo
+960
+normal zo
+968
+normal zo
+960
+normal zo
+977
+normal zo
+994
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1008
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1011
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+1015
+normal zo
+994
+normal zo
+1029
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1030
+normal zo
+1029
+normal zo
+1038
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1039
+normal zo
+1038
+normal zo
+1051
+normal zo
+1053
+normal zo
+1064
+normal zo
+1084
+normal zo
+1212
+normal zo
+1213
+normal zo
+1217
+normal zo
+1220
+normal zo
+1221
+normal zo
+1222
+normal zo
+1226
+normal zo
+1232
+normal zo
+1236
+normal zo
+1240
+normal zo
+1221
+normal zo
+1220
+normal zo
+1217
+normal zo
+1220
+normal zo
+1222
+normal zo
+1223
+normal zo
+1225
+normal zo
+1229
+normal zo
+1231
+normal zo
+1223
+normal zo
+1222
+normal zo
+1220
+normal zo
+1238
+normal zo
+1213
+normal zo
+1212
+normal zc
+1242
+normal zo
+1243
+normal zo
+1253
+normal zo
+1255
+normal zo
+1266
+normal zo
+1267
+normal zo
+1268
+normal zo
+1272
+normal zo
+1278
+normal zo
+1282
+normal zo
+1286
+normal zo
+1267
+normal zo
+1266
+normal zo
+1255
+normal zo
+1253
+normal zo
+1291
+normal zo
+1243
+normal zo
+1295
+normal zo
+1242
+normal zc
+674
+normal zo
+1302
+normal zo
+1303
+normal zo
+1304
+normal zo
+1306
+normal zo
+1316
+normal zo
+1317
+normal zo
+1321
+normal zo
+1327
+normal zo
+1328
+normal zo
+1329
+normal zo
+1333
+normal zo
+1337
+normal zo
+1341
+normal zo
+1345
+normal zo
+1328
+normal zo
+1327
+normal zo
+1317
+normal zo
+1316
+normal zo
+1350
+normal zo
+1353
+normal zo
+1306
+normal zo
+1357
+normal zo
+1304
+normal zo
+1303
+normal zc
+1302
+normal zo
+1369
+normal zo
+1370
+normal zo
+1371
+normal zo
+1372
+normal zo
+1376
+normal zo
+1377
+normal zo
+1377
+normal zo
+1378
+normal zo
+1379
+normal zo
+1378
+normal zo
+1377
+normal zo
+1377
+normal zo
+1387
+normal zo
+1392
+normal zo
+1399
+normal zo
+1387
+normal zo
+1408
+normal zo
+1410
+normal zo
+1414
+normal zo
+1415
+normal zo
+1414
+normal zo
+1421
+normal zo
+1425
+normal zo
+1427
+normal zo
+1425
+normal zo
+1421
+normal zo
+1408
+normal zo
+1376
+normal zo
+1378
+normal zo
+1379
+normal zo
+1378
+normal zo
+1371
+normal zo
+1370
+normal zo
+1387
+normal zo
+1392
+normal zo
+1393
+normal zo
+1392
+normal zo
+1402
+normal zo
+1387
+normal zo
+1412
+normal zo
+1414
+normal zo
+1418
+normal zo
+1419
+normal zo
+1418
+normal zo
+1425
+normal zo
+1429
+normal zo
+1431
+normal zo
+1429
+normal zo
+1425
+normal zo
+1412
+normal zo
+1369
+normal zo
+601
+normal zc
+1440
+normal zo
+1440
+normal zo
+1477
+normal zo
+1482
+normal zo
+1486
+normal zo
+1482
+normal zo
+1492
+normal zo
+1496
+normal zo
+1507
+normal zo
+1512
+normal zo
+1507
+normal zo
+1518
+normal zo
+1528
+normal zo
+1518
+normal zo
+1534
+normal zo
+1543
+normal zo
+1552
+normal zo
+1585
+normal zo
+1587
+normal zo
+1590
+normal zo
+1600
+normal zo
+1602
+normal zo
+1606
+normal zo
+1610
+normal zo
+1606
+normal zo
+1552
+normal zo
+1645
+normal zo
+1650
+normal zo
+1653
+normal zo
+1655
+normal zo
+1664
+normal zo
+1645
+normal zo
+1674
+normal zo
+1683
+normal zo
+1687
+normal zo
+1703
+normal zo
+1734
+normal zo
+1736
+normal zo
+1747
+normal zo
+1749
+normal zo
+1760
+normal zo
+1762
+normal zo
+1782
+normal zo
+1814
+normal zo
+1836
+normal zo
+1857
+normal zc
+1870
+normal zo
+1870
+normal zc
+1893
+normal zc
+1440
+normal zc
+1440
+normal zo
+1943
+normal zo
+1947
+normal zo
+1948
+normal zo
+1949
+normal zo
+1951
+normal zo
+1948
+normal zo
+1955
+normal zo
+1956
+normal zo
+1958
+normal zo
+1960
+normal zo
+1958
+normal zo
+1955
+normal zo
+1966
+normal zo
+1968
+normal zo
+1970
+normal zo
+1972
+normal zo
+1968
+normal zo
+1966
+normal zo
+1979
+normal zo
+1981
+normal zo
+1983
+normal zo
+1985
+normal zo
+1979
+normal zo
+1989
+normal zo
+2006
+normal zo
+2010
+normal zo
+2011
+normal zo
+2012
+normal zo
+2015
+normal zo
+2017
+normal zo
+2021
+normal zo
+2015
+normal zo
+2012
+normal zo
+2026
+normal zo
+2027
+normal zo
+2026
+normal zo
+2011
+normal zo
+2030
+normal zo
+2031
+normal zo
+2030
+normal zo
+2010
+normal zo
+2035
+normal zo
+2038
+normal zo
+2039
+normal zo
+2039
+normal zo
+2039
+normal zo
+2039
+normal zo
+2039
+normal zo
+2052
+normal zo
+2052
+normal zo
+2053
+normal zo
+2058
+normal zo
+2060
+normal zo
+2052
+normal zo
+2052
+normal zo
+2063
+normal zo
+2063
+normal zo
+2063
+normal zo
+2067
+normal zo
+2038
+normal zo
+1947
+normal zo
+1943
+normal zc
+let s:l = 144 - ((12 * winheight(0) + 20) / 40)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+144
+normal! 0110l
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

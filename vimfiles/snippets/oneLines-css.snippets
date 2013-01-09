@@ -1,0 +1,583 @@
+# VIM Snippets file v1.0 written by hap
+# http://www.ThinkHap.co
+# Some useful Unicode entities
+snippet nbs
+	&nbsp;
+# 鈫?snippet left
+	&#x2190;
+# 鈫?snippet right
+	&#x2192;
+# 鈫?snippet up
+	&#x2191;
+# 鈫?snippet down
+	&#x2193;
+# 鈫?snippet return
+	&#x21A9;
+# 鈬?snippet backtab
+	&#x21E4;
+# 鈬?snippet tab
+	&#x21E5;
+# 鈬?snippet shift
+	&#x21E7;
+# 鈱?snippet control
+	&#x2303;
+# 鈱?snippet enter
+	&#x2305;
+# 鈱?snippet command
+	&#x2318;
+# 鈱?snippet option
+	&#x2325;
+# 鈱?snippet delete
+	&#x2326;
+# 鈱?snippet backspace
+	&#x232B;
+# 鈳?snippet escape
+	&#x238B;
+# Generic Doctype
+snippet doctype HTML 4.01 Strict
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+snippet doctype HTML 4.01 Transitional
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+snippet doctype HTML 5
+	<!DOCTYPE HTML>
+snippet doctype XHTML 1.0 Frameset
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+snippet doctype XHTML 1.0 Strict
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+snippet doctype XHTML 1.0 Transitional
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+snippet doctype XHTML 1.1
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+# HTML Doctype 4.01 Strict
+snippet docts
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+# HTML Doctype 4.01 Transitional
+snippet doct
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+# HTML Doctype 5
+snippet doct5
+	<!DOCTYPE HTML>
+# XHTML Doctype 1.0 Frameset
+snippet docxf
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+# XHTML Doctype 1.0 Strict
+snippet docxs
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+# XHTML Doctype 1.0 Transitional
+snippet docxt
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+# XHTML Doctype 1.1
+snippet docx
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+snippet html
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>${1:demo}</title>
+			<style type="text/css">
+				body, form, h1, h2, h3, h4, p, img, ul, li, ol, dl, dt, dd, a, span, input, tr, th, td{margin:0;padding:0;}
+				body {font:normal 12px/1.5 "Arial","宋体","Simsun","Tahoma",sans-serif;}
+				li{list-style:none;}
+				img {border:0 none;vertical-align:top;}
+				table {border-collapse:collapse;border-spacing:0;}
+				a{color:#000;text-decoration:none;}
+				a:visited{}
+				a:hover{text-decoration:underline;}
+				a:active{}
+				
+				${2}
+			</style>
+		</head>
+		<body>
+			${3}
+		</body>
+	</html>
+snippet xhtml
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	${1}
+	</html>
+snippet body
+	<body>
+		${1}
+	</body>
+snippet head
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"`Close()`>
+		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		${2}
+	</head>
+snippet title
+	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
+snippet script
+	<script>
+		${1}
+	</script>${2}
+snippet scriptsrc
+	<script src="${1}.js" type="text/javascript"></script>${2}
+snippet base
+	<base href="${1}" target="${2}"`Close()`>
+snippet r
+	<br`Close()[1:]`>
+snippet div
+	<div">${1}</div>${2}
+# Embed QT Movie
+snippet movie
+	<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+		<param name="src" value="$1"`Close()`>
+		<param name="controller" value="$4"`Close()`>
+		<param name="autoplay" value="$5"`Close()`>
+		<embed src="${1:movie.mov}" width="${2:320}" height="${3:240}" controller="${4:true}" autoplay="${5:true}" scale="tofit" cache="true" pluginspage="http://www.apple.com/quicktime/download/" `Close()[1:]`>
+	</object>${6}
+snippet fieldset
+	<fieldset id="$1">
+		<legend>${1:name}</legend>
+		${3}
+	</fieldset>
+snippet form
+	<form action="${1:`Filename('$1_submit')`}" method="${2:get}" accept-charset="utf-8">
+		${3}
+	<p><input type="submit" value="Continue &rarr;"`Close()`></p>
+	</form>
+snippet label
+	<label for="${2:$1}">${1:name}</label><input type="${3:text/submit/hidden/button}" name="${4:$2}" value="${5}" id="${6:$2}"`Close()`>${7}
+snippet mailto
+	<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
+snippet meta
+	<meta name="${1:name}" content="${2:content}"`Close()`>${3}
+snippet opt
+	<option value="${1:option}">${2:$1}</option>${3}
+snippet optt
+	<option>${1:option}</option>${2}
+snippet select
+	<select name="${1:some_name}" id="${2:$1}">
+		<option value="${3:option}">${4:$3}</option>
+	</select>${5}
+snippet textarea
+	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet dtd
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+snippet html
+	<html xmlns="http://www.w3.org/1999/xhtml">
+snippet script
+	<script src="${1}.js"></script>${2}
+snippet style
+	<style type="text/css">
+		${1}
+	</style>${2}
+snippet link
+	<link rel="stylesheet" type="text/css" href="${1:style}.css" />${2}
+snippet cdata
+	<?[CDATA[
+		${1}
+	]]>${2}
+snippet d
+	<div>${1}</div>${2}
+snippet /
+	</div>
+snippet did
+	<div id="${1}">${2}</div>${3}
+snippet dc
+	<div class="${1}">${2}</div>${3}
+snippet dic
+	<div id="${1}" class="${2}">${3}</div>${4}
+snippet p
+	<p>${1}</p>${2}
+snippet pre
+	<pre>${1}</pre>${2}
+snippet ul
+	<ul ${1:class="f-cf"}>
+		<li>${2}</li>
+	</ul>${3}
+snippet li
+	<li>${1}</li>
+	<li>${2}</li>
+	<li>${3}</li>${4}
+snippet ula
+	<ul ${1:class="f-cf"}>
+		<li><a href="#">${2}</a></li>
+		<li><a href="#">${3}</a></li>
+		<li><a href="#">${4}</a></li>
+	</ul>${5}
+snippet ol
+	<ol>
+		<li>${1}</li>
+		<li>${2}</li>
+		<li>${3}</li>
+	</ol>${4}
+snippet ola
+	<ol>
+		<li><a href="#">${1}</a></li>
+		<li><a href="#">${2}</a></li>
+		<li><a href="#">${3}</a></li>
+	</ol>${4}
+snippet dl
+	<dl>
+		<dt>${1}</dt>
+		<dd>${2}</dd>
+	</dl>${3}
+snippet a
+	<a href="${1:#}">${2}</a>${3}
+snippet at
+	<a href="${1:#}" title="${2}">${3}</a>${4}
+snippet ata
+	<a href="${1:#}" target="_blank">${2}</a>${3}
+snippet att
+	<a href="${1:#}" title="${2}" target="_blank">${3}</a>${4}
+snippet atti
+	<a href="${1:#}" title="${2}" target="_blank"><img src="${3}" alt=""/></a>${4}
+snippet tg
+	target="_blank"
+snippet img
+	<img src="images/${1}" alt="${2}"/>${3}
+snippet h1i
+	<h1><img src="images/${1}" alt="${2}"/></h1>${3}
+snippet wh
+	width="${1}" height="${2}"${3}
+snippet sp
+	<span>${1}</span>${2}
+snippet em
+	<em>${1}</em>${2}
+snippet st
+	<strong>${1}</strong>${2}
+snippet sty
+	style="${1}"${2}
+snippet br
+	<br />
+snippet nb
+	&nbsp;
+snippet hr
+	<hr />
+snippet i
+	id="${1}"${2}
+snippet c
+	class="${1}"${2}
+snippet q
+	<q>${1}</q>${2}
+snippet h1
+	<h1>${1}</h1>${2}
+snippet h2
+	<h2>${1}</h2>${2}
+snippet h3
+	<h3>${1}</h3>${2}
+snippet h4
+	<h4>${1}</h4>${2}
+snippet h5
+	<h5>${1}</h5>${2}
+snippet h6
+	<h6>${1}</h6>${2}
+snippet df
+	<dfn>${1}</dfn>${2}
+snippet ci
+	<cite>${1}</cite>${2}
+snippet bq
+	<blockquote cite="${1}">${2}</blockquote>${3}
+snippet ins
+	<ins cite="${1}" datetime="${2}">${3}</ins>${4}
+snippet delc
+	<del cite="${1}" datetime="${2}">${3}</del>${4}
+snippet del
+	<del>${1}</del>${2}
+snippet abb
+	<abbr title="${1}">${2}</abbr>${3}
+snippet ac
+	<acronym title="${1}">${2}</acronym>${3}
+snippet form
+	<form method="post" action="${1}">
+		 ${2}
+	</form>${3}
+snippet fi
+	<fieldset>
+		<legend>${1}</legend>
+		<p><label for="${2:form_name}">${3:name:}</label><input type="text" id="${4:form_name}" name="${5:form_name}" /></p>
+		<p><label for="${6:form_pwd}">${7:password:}</label><input type="password" id="${8:form_pwd}" name="${9:form_pwd}" /></p>
+		<p><label></label><input type="submit" value="submit" /><input type="reset" value="reset" /></p>
+	</fieldset>${10}
+snippet lab
+	<label for="${1:id}">${2}</label>${3}
+snippet input
+	<input type="${1:text/submit/hidden/button}" name="${2:some_name}"
+	value="${3}" id="${4}"/>${5}
+snippet select
+	<select name="${1}">
+		<option value="${2}">${3:option1}</option>
+		<option value="${4}" selected="${5:selected}">${6:option2}</option>
+	</select>${7}
+snippet ir
+	<input type="radio" name="${1}" />${2}
+snippet ic
+	<input type="checkbox" checked="checked" name="${1}" />${2}
+snippet textarea
+	<textarea name="${1}" rows="${2}" cols="${3}">${4}</textarea>${5}
+snippet ire
+	<input type="reset" value="${1}" />${2}
+snippet isu
+	<input type="submit" value="${1}" />${2}
+snippet ibu
+	<input type="button" value="${1}" />${2}
+snippet but
+	<button>${1}</button>${2}
+snippet ipw
+	<input type="password" />
+snippet ih
+	<input type="hidden" />
+snippet ii
+	<input type="image" src="${1}" />${2}
+snippet table
+	<table border="${1:0}">
+		<tr>
+			<th>${2:Header}</th>
+			<th>${3:Data}</th>
+		</tr>
+		<tr>
+			<td>${4}</td>
+			<td>${5}</td>
+		</tr>
+	</table>${6}
+snippet tr
+	<tr>
+		<td>${1}</td>
+		<td>${2}</td>
+	</tr>${3}
+snippet thead
+	<thead>
+		<tr>
+			<td>${1}</td>
+		</tr>
+	</thead>${2}
+snippet tbody
+	<tbody>
+		<tr>
+			<td>${1}</td>
+		</tr>
+	</tbody>${2}
+snippet tfoot
+	<tfoot>
+		<tr>
+			<td>${1}</td>
+		</tr>
+	</tfoot>${2}
+snippet do
+	document
+snippet dbi
+	document.getElementById("${1}")${2}
+snippet gbi
+	getElementById("${1}")${2}
+snippet dta
+	document.getElementsByTagName("${1}")${2}
+snippet gta
+	getElementsByTagName("${1}")${2}
+snippet fl
+	float:left;${1}
+snippet fr
+	float:right;${1}
+snippet fn
+	float:none;${1}
+snippet cb
+	clear:both;${1}
+snippet db
+	display:block;${1}
+snippet dt
+	display:table;${1}
+snippet di
+	display:inline;${1}
+snippet dn
+	display:none;${1}
+snippet of
+	overflow:${1:hidden};${2}
+snippet oh
+	overflow:hidden;${1}
+snippet oa
+	overflow:auto;${1}
+snippet os
+	overflow:scroll;${1}
+snippet ov
+	overflow:visible;${1}
+snippet por
+	position:relative;${1}
+snippet poa
+	position:absolute;${1}
+snippet pos
+	position:static;${1}
+snippet pof
+	position:fixed;${1}
+snippet vi
+	visibility:${1:visible};${2}
+snippet vih
+	visibility:hidden;${1}
+snippet viv
+	visibility:visible;${1}
+snippet m
+	margin:${1:0};${2}
+snippet mt
+	margin-top:${1}px;${2}
+snippet ml
+	margin-left:${1}px;${2}
+snippet mb
+	margin-bottom:${1}px;${2}
+snippet mr
+	margin-right:${1}px;${2}
+snippet pad
+	padding:${1:0};${2}
+snippet pt
+	padding-top:${1}px;${2}
+snippet pl
+	padding-left:${1}px;${2}
+snippet pb
+	padding-bottom:${1}px;${2}
+snippet pr
+	padding-right:${1}px;${2}
+snippet pm
+	padding:${1:0}; margin:${2:0};${3}
+snippet w
+	width:${1}px;${2}
+snippet h
+	height:${1}px;${2}
+snippet lh
+	line-height:${1}px;${2}
+snippet mh
+	min-height:${1}px;${2}
+snippet boc
+	border-collapse:collapse;${1}
+snippet bo
+	border:1px solid #${1};${2}
+snippet bon
+	border:0 none;${1}
+snippet bot
+	border-top:1px solid #${1};${2}
+snippet bor
+	border-right:1px solid #${1};${2}
+snippet bob
+	border-bottom:1px solid #${1};${2}
+snippet bol
+	border-left:1px solid #${1};${2}
+snippet bgc
+	background-color:#${1};${2}
+snippet bg
+	background:#${1:fff} url("images/${2}") no-repeat left top;${3}
+snippet bgx
+	background:url("images/${1}") repeat-x left top;${2}
+snippet bgy
+	background:url("images/${1}") repeat-y left top;${2}
+snippet bgp
+	background-position:${1:0 0};${2}
+snippet bgi
+	background-image:url("images/${1}");${2}
+snippet bgn
+	background:none;${1}
+snippet f
+	font:normal 12px/1.5em "Arial";${1}
+snippet fs
+	font-size:${1}px;${2}
+snippet fw
+	font-weight:${1:bold};${2}
+snippet fwn
+	font-weight:normal;${1}
+snippet co
+	color:#${1};${2}
+snippet tac
+	text-align:center;${1}
+snippet tal
+	text-align:left;${1}
+snippet tar
+	text-align:right;${1}
+snippet ti
+	text-indent:${1:-9999}px;${2}
+snippet tdn
+	text-decoration:none;${1}
+snippet tdu
+	text-decoration:underline;${1}
+snippet va
+	vertical-align:${1:middle};${2}
+snippet ls
+	list-style:${1:none};${2}
+snippet cp
+	cursor:pointer;${1}
+snippet ws
+	white-space:nowrap;${1}
+snippet ff
+	font-family:arial,verdana,sans-serif;${1}
+snippet fil
+	filter:Alpha(opacity=${1:50});-moz-opacity:${2:0.5};opacity:${3:0.5};${4}
+snippet filter
+	background-color:rgba(51,51,51,0.3);_filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C333333', endColorstr='#4C333333')}
+snippet fixpng
+	_background:none; _filter:
+	progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1}');${2}
+snippet obj
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="950" height="150">
+		<param name="movie" value="${1}" />
+		<param name="quality" value="high" />
+		<param name="wmode" value="opaque" />
+		<embed src="${2}" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="opaque" width="${3:950}" height="${4:150}"></embed>
+	</object>${5}
+snippet imap
+	<img src="images/${1}" alt="${2}" usemap="#${3:map1}" />
+		<map name="${4:$3}" id="${5:$3}">
+			<area shape="${6:rect}" coords="${7:0,0,100,100}" href="${8:#}"	target="_blank" title="${9}" />
+		</map>${10}
+snippet map
+	<map name="${1:map1}" id="${2:$1}">
+		<area shape="${3:rect}" coords="${4:0,0,100,100}" href="${5:#}" target="_blank" title="${6}" />
+	</map>${7}
+snippet usemap
+	usemap="#${1:map1}"${2}
+snippet area
+	<area shape="poly" coords="0,0,200,0,100,100,30,100" href="#" target="_blank" title="" />
+	<area shape="circle" coords="圆心0,0,+半径10" href="#" target="_blank" title="" />
+snippet cf
+	/* clearfix */
+	.cf:after{display:block;visibility:hidden;font-size:0;line-height:0;clear:both;content:"";}  
+	.cf{zoom:1;} /*IE*/
+snippet bora
+	border-radius:${1:5}px;-moz-border-radius:${2:$1}px;-webkit-border-radius:${3:$1}px;${4}
+snippet cms
+	<cms:custom title="${1}" group="${2}" fields="${3:href:链接:string}" defaultRow="${4}" row="${5}">
+	#foreach($item in $customList)
+	${6}#end
+	</cms:custom>
+snippet fixed
+	/*让position:fixed在IE6下可用! */
+	 
+	.fixed-top /* 头部固定 */{position:fixed;bottom:auto;top:0px;}
+	.fixed-bottom /* 底部固定 */{position:fixed;bottom:0px;top:auto;}
+	.fixed-left /* 左侧固定 */{position:fixed;right:auto;left:0px;}
+	.fixed-right /* 右侧固定 */{position:fixed;right:0px;left:auto;}
+	/* 上面的是除了IE6的主流浏览器通用的方法 */
+	* html,* html body /* 修正IE6振动bug */{background-image:url(about:blank);background-attachment:fixed;}
+	* html .fixed-top /* IE6 头部固定 */{position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop));}
+	* html .fixed-right /* IE6 右侧固定 */ {position:absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));}
+	* html .fixed-bottom /* IE6 底部固定  */{position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+	* html .fixed-left /* IE6 左侧固定 */{position:absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft));}
+snippet ie
+	/*IE HACK*/
+	p{
+	color:#000;	 /* 所有浏览器 */
+	color:#f00\9;	 /* 所有IE */
+	*color:#00f;	/* IE6,7 */
+	+color:#0f0;	/* IE7 */
+	_color:#e6e6e6;	 /* IE6 */
+	}
+
+	<!--if IE 6 7 8 9-->
+	<!--[if IE 6]>
+	    ^!
+	<![endif]-->
+	<!--[if lt IE 7]>
+	    ^!
+	<![endif]-->        <!-- 低于IE7的版本 -->
+	<!--[if lte IE 8]>
+	    ^!
+	<![endif]-->        <!-- 低于等于IE8的版本 -->
+	<!--[if !IE]><-->
+	    ^!
+	<!--<![endif]-->        <!-- 非IE -->
+
+	IE min-height
+	height:auto!important;
+	height:500px;
+	min-height:500px;
+	
+	min-height:100px;
+	height:auto!important;
+	height:100px;
