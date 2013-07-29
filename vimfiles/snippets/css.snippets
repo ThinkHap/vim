@@ -155,9 +155,11 @@ snippet ff
 snippet opa
 	filter: Alpha(opacity=${1:50});-moz-opacity: ${2:0.5};opacity: ${3:0.5};${4}
 snippet filter
-	background-color: rgba(51,51,51,0.3);_filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C333333', endColorstr='#4C333333')}
+	background-color: rgba(51,51,51,0.3);
+	_filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C333333', endColorstr='#4C333333')}
 snippet fixpng
-	_background: none; _filter:	progid: DXImageTransform.Microsoft.AlphaImageLoader(src='${1}');${2}
+	_background: none;
+	_filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='${1}');${2}
 snippet obj
 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="950" height="150">
 		<param name="movie" value="${1}" />

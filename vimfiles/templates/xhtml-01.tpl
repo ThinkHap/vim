@@ -15,7 +15,8 @@
 		    a:hover {color:#f44;text-decoration:underline;}
             
         </style>
-        <script src="https://s.tbcdn.cn/s/kissy/1.2.0/kissy-min.js"></script>
+        <script src="http://a.tbcdn.cn/s/kissy/1.2.0/kissy.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
     </head>
     <body>
         #cursor#
