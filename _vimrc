@@ -2,7 +2,7 @@
 "
 "  author: hap <ThinkHap@qq.com>
 " website: http://www.thinkhap.com
-"    date: 2012-02-17
+"    date: 2013-08-21
 
 
 if v:version < 700
@@ -517,7 +517,7 @@ let NERDTreeQuitOnOpen=1
 " 打开系统的hosts文件
 map <silent> <leader>eh :tabe C:\Windows\System32\drivers\etc\hosts<cr>
 " 修改hosts文件后直接清除系统的dns缓存
-autocmd! bufwritepost hosts :!start cmd /C ipconfig /flushdns
+autocmd! bufwritepost hosts :silent !start cmd /C ipconfig /flushdns
 
 " Edit _vimrc
 map <silent> <leader>vim :tabe D:\Program Files\Vim\_vimrc<cr>
@@ -547,10 +547,14 @@ inoremap <C-d> <Delete>
 "endfor
 
 " 插件快捷键
-"nmap <C-d> :NERDTree<cr>
+"nmap <f9> :NERDTree<cr>
 nmap <f9> :NERDTree<cr>
-"nmap <C-e> :BufExplorer<cr>
+
+"nmap <f2> :BufExplorer<cr>
 nmap <f2>  :BufExplorer<cr>
+
+"nmap <f4> :JSLint
+nmap <f4>  :JSLintToggle<cr>
 
 " 插入模式按 F4 插入当前时间
 imap <f4> <C-r>=GetDateStamp()<cr>
@@ -571,3 +575,4 @@ nmap <C-g><C-f> :call GotoFirstEffectiveLine()<cr>
 
 " 按下 Q 不进入 Ex 模式，而是退出
 nmap Q :x<cr>
+
